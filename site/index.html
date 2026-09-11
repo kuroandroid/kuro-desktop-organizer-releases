@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Kuro Release Center</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main>
+  <p class="eyebrow">Kuro Release Center</p>
+  <h1>Aggiornamenti, senza rumore.</h1>
+  <p class="lead">
+    Centro di distribuzione di Kuro Desktop Organizer. L’app consulta questi feed,
+    verifica le firme crittografiche e installa soltanto pacchetti autentici.
+  </p>
+
+  <section class="grid">
+    <article class="card">
+      <p class="eyebrow">Canale consigliato</p>
+      <h2>Stable</h2>
+      <p>Versioni verificate per l’uso quotidiano.</p>
+      <p class="status"><span class="dot"></span><span id="stable">In attesa della prima release</span></p>
+      <p><a href="stable/appcast.xml">Apri appcast</a></p>
+    </article>
+
+    <article class="card beta">
+      <p class="eyebrow">Anteprime</p>
+      <h2>Beta</h2>
+      <p>Nuove funzioni da provare prima della pubblicazione.</p>
+      <p class="status"><span class="dot"></span><span id="beta">In attesa della prima release</span></p>
+      <p><a href="beta/appcast.xml">Apri appcast</a></p>
+    </article>
+  </section>
+
+  <footer>
+    <p>© 2026 Michele Meloni · <code>com.kurolost.KuroDesktopOrganizer</code></p>
+  </footer>
+</main>
+<script>
+fetch("latest.json", { cache: "no-store" })
+  .then(r => r.json())
+  .then(data => {
+    for (const channel of ["stable", "beta"]) {
+      const item = data[channel];
+      if (item) document.getElementById(channel).textContent =
+        `Versione ${item.version} · build ${item.build}`;
+    }
+  })
+  .catch(() => {});
+</script>
+</body>
+</html>
