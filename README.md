@@ -12,4 +12,13 @@ Repository pubblico destinato esclusivamente alla distribuzione di Kuro Desktop 
 
 Il codice sorgente dell'app non deve essere pubblicato in questo repository.
 
+## Prima pubblicazione
+
+Dal progetto principale:
+
+```zsh
+./Scripts/Updates/prepare-release.sh 1.0.0 100 stable
+./Scripts/Updates/publish-release.sh 1.0.0 stable
+```
+
 La chiave privata Sparkle non deve mai essere copiata qui.
