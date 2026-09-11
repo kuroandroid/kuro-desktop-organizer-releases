@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Kuro Desktop Organizer Updates</title>
+    <link>https://updates.michelemeloni.com/</link>
+    <description>Il feed verrà firmato e popolato dallo script prepare-release.sh.</description>
+    <language>it</language>
+  </channel>
+</rss>
