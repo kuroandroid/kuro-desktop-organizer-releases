@@ -1,0 +1,15 @@
+{
+  "product": "Kuro Desktop Organizer",
+  "bundleIdentifier": "com.kurolost.KuroDesktopOrganizer",
+  "githubOwner": "kuroandroid",
+  "releaseRepository": "kuro-desktop-organizer-releases",
+  "sourceRepository": "kuro-desktop-organizer",
+  "pagesBaseURL": "https://kuroandroid.github.io/kuro-desktop-organizer-releases",
+  "customDomain": "updates.michelemeloni.com",
+  "sparkleVersion": "2.9.6",
+  "sparklePackageChecksum": "8d5fb41d960b43f4a68aa14126bf62b098544ec8d191cdcc73eb14e63a8e7606",
+  "sparkleKeyAccount": "com.kurolost.KuroDesktopOrganizer",
+  "stableFeed": "stable/appcast.xml",
+  "betaFeed": "beta/appcast.xml",
+  "minimumMacOS": "14.0"
+}
